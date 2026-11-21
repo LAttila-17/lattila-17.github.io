@@ -32,19 +32,27 @@
 <div style="background:#b3261e;color:#fff;padding:.7rem 1rem;border-radius:.4rem;margin-bottom:1.2rem;font-weight:600">DRAFT — published for testing only. Not yet in force. The publisher name and contact address will be added before release.</div>
 
 <h1>Privacy Policy — YATZY: First Strike</h1>
-<p class="updated">Last updated: <strong>draft of 2026-09-24</strong></p>
+<p class="updated">Last updated: <strong>draft of 2026-11-21</strong></p>
 
 <h2>The short version</h2>
 <p class="lede">
   <strong>You can play the whole game without an account.</strong> As a guest,
   your games, progress and unlocks are kept only on your phone, and the app
-  sends nothing about you to us.
+  sends nothing about you to us — except a <strong>crash report</strong> when the
+  app breaks, which carries no account details and which you can turn off
+  (section 6).
+</p>
+<p>
+  The game shows <strong>a video advertisement only when you choose to watch
+  one</strong> for a reward (a free life, a boost, extra coins). Those videos come
+  from Google AdMob, which asks for your consent first where the law requires
+  it (section 6).
 </p>
 <p>
   If you create an account, we store what is needed to give your progress back
   on another phone, to put your scores on the leaderboards and to run online
-  matches. We do not sell it, we do not use it for advertising, and there are no
-  advertising or analytics services in the app.
+  matches. We do not sell it, and we never give your account details to the
+  advertising service.
 </p>
 
 <h2>1. Who we are</h2>
@@ -76,8 +84,9 @@
   <tr><td>Your chosen avatar, dice set, board, frame, showcased badges and game settings</td><td>so your choices follow you to another phone and show next to your name</td></tr>
   <tr><td>Finished games: score, categories, game mode, date</td><td>statistics, leaderboards and achievements</td></tr>
   <tr><td>Daily Challenge results</td><td>the daily leaderboard and your streak</td></tr>
+  <tr><td>Results of the daily run (Run mode): run points, stages reached, the day</td><td>the daily run's leaderboard</td></tr>
   <tr><td>Adventure progress: stages, stars, vaults, lives, coins</td><td>so a new phone restores your campaign</td></tr>
-  <tr><td>Unlocked cosmetics, avatars and achievements</td><td>so what you earned is not lost</td></tr>
+  <tr><td>Unlocked cosmetics, avatars, achievements and Run mode milestones</td><td>so what you earned is not lost</td></tr>
   <tr><td>A game in progress, with a random identifier of your installation</td><td>so you can continue on another phone, and so two phones on one account can tell whose copy is newer</td></tr>
   <tr><td>Online matches: the moves, the result and who you played</td><td>to run the match and show your match history</td></tr>
 </table>
@@ -104,6 +113,18 @@
   <li>your <strong>scores</strong>, and in a match, your moves.</li>
 </ul>
 <p>Everything else is private. <strong>Your email address is never shown to anyone.</strong></p>
+<p>
+  <strong>Friends.</strong> A friend you accept sees you on their Friends board
+  and can challenge you to a match. Your <strong>friend code</strong> (the QR
+  code and link on the Friends screen) carries your player number and
+  nickname, so share it with people you want as friends. A friend request can
+  be declined, and a player can be blocked.
+</p>
+<p>
+  <strong>The camera</strong> is used only while you scan a friend code, after
+  you tap <em>Scan a code</em> and allow it. The picture is read on your phone
+  to find the code; it is not stored or sent anywhere.
+</p>
 
 <h2>5. Notifications</h2>
 <p>
@@ -111,12 +132,24 @@
   <strong>locally</strong>. Nothing is sent to us to make it work. It is off
   until you switch it on, and switching it off stops it.
 </p>
+<p>
+  We may also send an occasional <strong>announcement</strong> to everyone
+  (a new region, an event) through Google's Firebase Cloud Messaging. It is
+  sent to all players at once: we hold no identifier for your phone and cannot
+  address you personally. It arrives only if your phone allows the app's
+  notifications, on its own "Announcements" channel, which you can turn off
+  in your phone's settings.
+</p>
 
 <h2>6. Who else is involved</h2>
 <table>
   <tr><th>Who</th><th>What they do</th><th>Where</th></tr>
   <tr><td>Supabase</td><td>hosts the account data above and runs sign-in, on our behalf</td><td>data stored in the EU (Frankfurt, Germany)</td></tr>
   <tr><td>Google Play</td><td>distributes the app</td><td>global</td></tr>
+  <tr><td>Google (Firebase Crashlytics)</td><td>receives crash reports, on our behalf (below)</td><td>may be processed outside the EU, in the United States</td></tr>
+  <tr><td>Google (AdMob)</td><td>shows the reward videos you choose to watch (below)</td><td>global, including the United States</td></tr>
+  <tr><td>Google (Analytics for Firebase)</td><td>counts how the app is used: outside the EU, the UK and Switzerland, and inside them only if you consent (below)</td><td>may be processed outside the EU, in the United States</td></tr>
+  <tr><td>Google (Firebase Cloud Messaging)</td><td>delivers announcements sent to all players (section 5)</td><td>may be processed outside the EU, in the United States</td></tr>
 </table>
 <p>
   Supabase processes data for us under a data-processing agreement and may use
@@ -127,9 +160,60 @@
   phone if you allowed that in your phone's settings. That is between you and
   Google, under Google's privacy policy; we see only anonymous summaries.
 </p>
+<h3>Crash reports</h3>
 <p>
-  <strong>There are no advertising, analytics or crash-reporting services in the
-  app</strong>, and no data is sold, rented or shared for marketing.
+  When the app breaks, it sends a <strong>crash report</strong> to Google's Firebase
+  Crashlytics so we can find and fix the fault. A report contains: what went
+  wrong in the code (the error and where it happened), the screen you were on,
+  the app version, your phone's model and Android version, the time, and a
+  random installation identifier that Crashlytics creates to count how many
+  phones a fault affects. If the app was closed by Android itself, the report
+  also carries the reason Android gives. <strong>It contains no account details,
+  no email address and nothing you typed.</strong>
+</p>
+<p>
+  We do this on the basis of our legitimate interest in a game that works
+  (GDPR article 6(1)(f)). <strong>You can turn it off at any time:</strong>
+  Settings → Send crash reports. Crashlytics keeps a report for 90 days.
+  Google processes it for us under its data-processing terms; this can happen
+  in the United States, under the safeguards those terms provide.
+</p>
+<h3>Reward videos (Google AdMob)</h3>
+<p>
+  Some rewards can be earned by watching a short video: a free life, a free
+  boost, or extra coins. <strong>A video only ever starts because you tapped to
+  watch it</strong>; the game shows no other advertising. The videos come from
+  Google AdMob, which, to show and measure them, uses your phone's advertising
+  ID, its approximate location (from the IP address), basic device information
+  and how you interacted with the ad. AdMob is never given your account,
+  nickname or email address.
+</p>
+<p>
+  <strong>In the EU, the UK and Switzerland</strong> the app asks for your
+  consent first, in a message from Google, and the ads are personalised only
+  if you agree. You can change your answer at any time: Settings → Privacy
+  choices. Anywhere, you can reset or delete your advertising ID in your
+  phone's Android settings. Google processes this data under its own privacy
+  policy as an independent controller for advertising
+  (<a href="https://policies.google.com/technologies/partner-sites">how Google
+  uses data from apps that use its services</a>).
+</p>
+
+<h3>Usage statistics (Google Analytics for Firebase)</h3>
+<p>
+  <strong>Outside the EU, the UK and Switzerland</strong>, the app counts which
+  screens are used and for how long, with a random app-instance identifier and
+  an approximate location derived from the IP address, so we can see what to
+  improve. It is never linked to your account and never uses the advertising
+  ID. <strong>Inside the EU, the UK and Switzerland it is off unless you
+  consent</strong> in the message the app shows on first start (to storing
+  information on your device, measuring content performance and statistics).
+  You can withdraw at any time in Settings → Privacy choices, and counting
+  stops at once. We keep these statistics for 2 months.
+</p>
+<p>
+  No data is sold, rented or shared for marketing beyond what is described
+  above.
 </p>
 
 <h2>7. How we protect it</h2>
